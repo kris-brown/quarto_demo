@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Test"
+  sidebar:
+    - id: docs
+      contents: docs
+format:
+  html:
+    toc: true
+    theme:
+      light: [cosmo, theme.scss]
+      dark: darkly
+    code-copy: true
+    code-overflow: wrap
+    css: styles.css
+    include-after-body: js.html
+
+filters:
+  - quarto
+
+freeze: auto
