@@ -8,3 +8,10 @@ This should have the contents of `C` listed, just like in `B/index.qmd`.
 
 It is as if the leading `/` in the listing `contents: /docs/B/C` is ignored, 
 such that it is treated like a relative path.
+
+## The links below should be affected by newpagelink.lua
+[link](https://example.com){target="_blank"}
+
+[link](https://example.com)
+
+[link](/docs/B)

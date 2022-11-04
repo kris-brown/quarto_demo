@@ -19,6 +19,7 @@ format:
     include-after-body: js.html
 
 filters:
+  - filters/newpagelink.lua
   - quarto
 
 freeze: auto
