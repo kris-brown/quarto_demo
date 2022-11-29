@@ -1,7 +1,9 @@
 function Link(link)
   link.attributes["style"] = "color:hotpink; background-color:gold"
-  link.attributes["mdb-toggle"] = "popover"
-  link.attributes["mdb-trigger"] = "hover"
-  link.attributes["mdb-content"] = "Some content filled from a more complex filter using cross-ref?"
+  link.attributes["data-bs-toggle"] = "popover"
+  link.attributes["data-bs-trigger"] = "hover focus"
+  link.attributes["data-bs-content"] = link.target
+  link.attributes["data-bs-container"] = "body"
+  link.attributes["tabindex"] = "0"
   return link
 end

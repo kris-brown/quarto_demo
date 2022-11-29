@@ -7,11 +7,12 @@ listing:
 This should have the contents of `C` listed, just like in `B/index.qmd`.
 
 It is as if the leading `/` in the listing `contents: /docs/B/C` is ignored, 
-such that it is treated like a relative path.
+such that it is treated like a relative path.[^1]
 
-## The links below should be affected by newpagelink.lua
-[link](https://example.com){target="_blank"}
+[^1]: A footnote
 
-[link](https://example.com)
+## The links below are affected by newpagelink.lua (as seen by their color)
 
-[link](/docs/B)
+[external link](https://example.com)
+
+[internal link](/docs/B)
